@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "e6a99507-cb2d-4e1b-8732-99a62ac5d782",
+		"name": "nagp_unit_testing_assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "buy equity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\":\"959d7a87-a10d-48ef-890b-e51e97987340\",\n    \"equityName\":\"123\",\n    \"equityValue\":\"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/broker/equity/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"broker",
+						"equity",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sell equity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\":\"959d7a87-a10d-48ef-890b-e51e97987340\",\n    \"equityName\":\"123\",\n    \"equityValue\":\"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/broker/equity/sell",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"broker",
+						"equity",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add funds",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\":\"959d7a87-a10d-48ef-890b-e51e97987340\",\n    \"funds\":\"15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/trader/funds/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"trader",
+						"funds",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
